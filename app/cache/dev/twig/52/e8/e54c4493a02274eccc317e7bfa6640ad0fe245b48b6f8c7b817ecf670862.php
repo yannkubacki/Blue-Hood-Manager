@@ -113,19 +113,28 @@ class __TwigTemplate_52e8e54c4493a02274eccc317e7bfa6640ad0fe245b48b6f8c7b817ecf6
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t<div class=\"col-sm-4\">
-\t\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t\tProjet 1
-\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t<div class=\"project\">
+\t\t\t\t\t\t\t\t<figure class=\"project--thumbnail\">
+\t\t\t\t\t\t\t\t\t<img src=\"\" alt=\"La jolie thumbnail\" class=\"img-responsive\">
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t\t\t\t<h3 class=\"project--name\">Blue Hood Manager</h3>
+\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div class=\"col-sm-4\">
-\t\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t\tProjet 2
-\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t<div class=\"project\">
+\t\t\t\t\t\t\t\t<figure class=\"project--thumbnail\">
+\t\t\t\t\t\t\t\t\t<img src=\"\" alt=\"La jolie thumbnail\" class=\"img-responsive\">
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t\t\t\t<h3 class=\"project--name\">Maliki</h3>
+\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div class=\"col-sm-4\">
-\t\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t\tProjet 3
-\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t<div class=\"project\">
+\t\t\t\t\t\t\t\t<figure class=\"project--thumbnail\">
+\t\t\t\t\t\t\t\t\t<img src=\"\" alt=\"La jolie thumbnail\" class=\"img-responsive\">
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t\t\t\t<h3 class=\"project--name\">Portfolio Version 2</h3>
+\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -135,11 +144,11 @@ class __TwigTemplate_52e8e54c4493a02274eccc317e7bfa6640ad0fe245b48b6f8c7b817ecf6
 
 \t
 \t";
-        // line 102
+        // line 111
         if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
             // asset "ec3b4c9_0"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_ec3b4c9_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/ec3b4c9_script_1.js");
-            // line 103
+            // line 112
             echo "\t\t<script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
@@ -153,7 +162,7 @@ class __TwigTemplate_52e8e54c4493a02274eccc317e7bfa6640ad0fe245b48b6f8c7b817ecf6
 \t";
         }
         unset($context["asset_url"]);
-        // line 104
+        // line 113
         echo "</body>
 
 </html>
@@ -172,6 +181,6 @@ class __TwigTemplate_52e8e54c4493a02274eccc317e7bfa6640ad0fe245b48b6f8c7b817ecf6
 
     public function getDebugInfo()
     {
-        return array (  157 => 104,  143 => 103,  139 => 102,  49 => 14,  35 => 12,  31 => 11,  19 => 1,);
+        return array (  166 => 113,  152 => 112,  148 => 111,  49 => 14,  35 => 12,  31 => 11,  19 => 1,);
     }
 }
