@@ -74,6 +74,7 @@ class __TwigTemplate_52e8e54c4493a02274eccc317e7bfa6640ad0fe245b48b6f8c7b817ecf6
 
 \t\t    <!-- Collect the nav links, forms, and other content for toggling -->
 \t\t    <div class=\"collapse navbar-collapse\" id=\"mainNav\">
+\t\t    \t<!--<img src=\"...\" alt=\"...\" class=\"img-circle\">-->
 \t\t      <ul class=\"nav navbar-nav\">
 \t\t       
 \t\t      </ul>
@@ -81,23 +82,52 @@ class __TwigTemplate_52e8e54c4493a02274eccc317e7bfa6640ad0fe245b48b6f8c7b817ecf6
 \t\t        <div class=\"form-group\">
 \t\t          <input type=\"text\" class=\"form-control\" placeholder=\"Search\">
 \t\t        </div>
-\t\t        <button type=\"submit\" class=\"btn btn-default\">Rechercher</button>
+\t\t        <button type=\"submit\" class=\"btn btn-default btn-small\">Rechercher</button>
 \t\t      </form>
 \t\t    </div><!-- /.navbar-collapse -->
 \t\t  </div><!-- /.container-fluid -->
 \t\t</nav>
 \t</header>
 
-\t<div class=\"container-fluid\">
-\t\t<div class=\"row\">
-\t\t\t<div class=\"col-md-3\">
+\t<div class=\"container-fluid l-mainContainer\">
+\t\t<div class=\"row l-mainRow\">
+\t\t\t<!--<div class=\"col-lg-2 col-md-3 col-sm-2 col-xs-1 l-sidebar-container\">-->
+\t\t\t<div class=\"col-lg-2 col-xs-3 l-sidebar-container\">
 \t\t\t\t<aside class=\"l-sidebar\">
-\t\t\t\t\t<h2 class=\"l-sidebar--title\">Ma Sidebar</h2>
+\t\t\t\t\t<nav class=\"sideNav\">
+\t\t\t\t\t\t<ul class=\"nav nav-pills nav-stacked\">
+\t\t\t\t\t\t  <li><a href=\"#\">Mes projets</a></li>
+\t\t\t\t\t\t  <li><a href=\"#\">Mes discussions</a></li>
+\t\t\t\t\t\t  <li><a href=\"#\">Mes To-dos</a></li>
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t</nav>
 \t\t\t\t</aside>
 \t\t\t</div>
-\t\t\t<div class=\"col-md-9\">
+\t\t\t<!--<div class=\"col-lg-10 col-md-9 col-sm-10 col-xs-11 l-main-container\">-->
+\t\t\t<div class=\"col-lg-10 col-xs-9\">
 \t\t\t\t<div class=\"l-main\">
-\t\t\t\t\t<h2 class=\"l-main--title\">Mon dashboard</h2>
+\t\t\t\t\t<div class=\"row\">
+\t\t\t\t\t\t<div class=\"col-sm-12\">
+\t\t\t\t\t\t\t<h2>Bonjour Ninja, sur quel projet on travaille aujourd'hui&nbsp;?</h2>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</div>
+\t\t\t\t\t<div class=\"row\">
+\t\t\t\t\t\t<div class=\"col-sm-4\">
+\t\t\t\t\t\t\t<p>
+\t\t\t\t\t\t\t\tProjet 1
+\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-sm-4\">
+\t\t\t\t\t\t\t<p>
+\t\t\t\t\t\t\t\tProjet 2
+\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-sm-4\">
+\t\t\t\t\t\t\t<p>
+\t\t\t\t\t\t\t\tProjet 3
+\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div><!-- fin row -->
@@ -105,11 +135,11 @@ class __TwigTemplate_52e8e54c4493a02274eccc317e7bfa6640ad0fe245b48b6f8c7b817ecf6
 
 \t
 \t";
-        // line 72
+        // line 102
         if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
             // asset "ec3b4c9_0"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_ec3b4c9_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/ec3b4c9_script_1.js");
-            // line 73
+            // line 103
             echo "\t\t<script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
@@ -123,7 +153,7 @@ class __TwigTemplate_52e8e54c4493a02274eccc317e7bfa6640ad0fe245b48b6f8c7b817ecf6
 \t";
         }
         unset($context["asset_url"]);
-        // line 74
+        // line 104
         echo "</body>
 
 </html>
@@ -142,6 +172,6 @@ class __TwigTemplate_52e8e54c4493a02274eccc317e7bfa6640ad0fe245b48b6f8c7b817ecf6
 
     public function getDebugInfo()
     {
-        return array (  127 => 74,  113 => 73,  109 => 72,  49 => 14,  35 => 12,  31 => 11,  19 => 1,);
+        return array (  157 => 104,  143 => 103,  139 => 102,  49 => 14,  35 => 12,  31 => 11,  19 => 1,);
     }
 }

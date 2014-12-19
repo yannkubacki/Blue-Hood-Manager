@@ -30,9 +30,9 @@
 @text-color:            @gray;
 
 //** Global textual link color.
-@link-color:            @brand-primary;
+@link-color:            #fff;
 //** Link hover color set via `darken()` function.
-@link-hover-color:      darken(@link-color, 15%);
+@link-hover-color:      #fff;
 
 
 //== Typography
@@ -46,10 +46,10 @@
 @font-family-base:        @font-family-sans-serif;
 
 @font-size-base:          16px;
-@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+@font-size-large:         ceil((@font-size-base * 1.125)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.875)); // ~14px
 
-@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h1:            floor((@font-size-base * 1.75)); // ~28px
 @font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
 @font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
 @font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
@@ -343,7 +343,7 @@
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             #fff;
-@navbar-default-bg:                @dark-blue;
+@navbar-default-bg:                @blue-dark;
 @navbar-default-border:            transparent;
 
 // Navbar links
@@ -397,18 +397,18 @@
 //##
 
 //=== Shared nav styles
-@nav-link-padding:                          10px 15px;
-@nav-link-hover-bg:                         @gray-lighter;
+@nav-link-padding:                          25px 15px;
+@nav-link-hover-bg:                         @blue-dark;
 
-@nav-disabled-link-color:                   @gray-light;
+@nav-disabled-link-color:                   #fff;
 @nav-disabled-link-hover-color:             @gray-light;
 
 @nav-open-link-hover-color:                 #fff;
 
 //== Tabs
-@nav-tabs-border-color:                     #ddd;
+@nav-tabs-border-color:                     @blue-dark;
 
-@nav-tabs-link-hover-border-color:          @gray-lighter;
+@nav-tabs-link-hover-border-color:          @blue-dark;
 
 @nav-tabs-active-link-hover-bg:             @body-bg;
 @nav-tabs-active-link-hover-color:          @gray;
@@ -418,7 +418,7 @@
 @nav-tabs-justified-active-link-border-color:     @body-bg;
 
 //== Pills
-@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-border-radius:                   0px;
 @nav-pills-active-link-hover-bg:            @component-active-bg;
 @nav-pills-active-link-hover-color:         @component-active-color;
 
