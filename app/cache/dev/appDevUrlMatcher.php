@@ -148,13 +148,23 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // bhm_core_homepage
+        // bhm_core_login
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'bhm_core_homepage');
+                return $this->redirect($pathinfo.'/', 'bhm_core_login');
             }
 
-            return array (  '_controller' => 'BHM\\CoreBundle\\Controller\\DefaultController::indexAction',  '_route' => 'bhm_core_homepage',);
+            return array (  '_controller' => 'BHM\\CoreBundle\\Controller\\DefaultController::loginAction',  '_route' => 'bhm_core_login',);
+        }
+
+        // bhm_core_signup
+        if ($pathinfo === '/signup') {
+            return array (  '_controller' => 'BHM\\CoreBundle\\Controller\\DefaultController::signupAction',  '_route' => 'bhm_core_signup',);
+        }
+
+        // bhm_core_dashboard
+        if ($pathinfo === '/dashboard') {
+            return array (  '_controller' => 'BHM\\CoreBundle\\Controller\\DefaultController::dashboardAction',  '_route' => 'bhm_core_dashboard',);
         }
 
         // _welcome

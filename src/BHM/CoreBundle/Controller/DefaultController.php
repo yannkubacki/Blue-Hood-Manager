@@ -11,4 +11,9 @@ class DefaultController extends Controller
     {
         return $this->render('BHMCoreBundle:Default:index.html.twig');
     }
+
+    public function dashboardAction()
+    {
+        return $this->render('BHMCoreBundle:Default:dashboard.html.twig');
+    }
 }
