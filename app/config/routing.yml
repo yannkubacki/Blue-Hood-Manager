@@ -1,0 +1,8 @@
+bhm_core:
+    resource: "@BHMCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+lp_test:
+    resource: "@LPTestBundle/Resources/config/routing.yml"
+    prefix:   /
+
