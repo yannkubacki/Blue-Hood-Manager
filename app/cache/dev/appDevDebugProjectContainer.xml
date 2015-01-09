@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">C:/wamp/www/symfony/app</parameter>
+    <parameter key="kernel.root_dir">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">app</parameter>
-    <parameter key="kernel.cache_dir">C:/wamp/www/symfony/app/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">C:/wamp/www/symfony/app/logs</parameter>
+    <parameter key="kernel.cache_dir">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/logs</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
@@ -27,11 +27,11 @@
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_driver">pdo_mysql</parameter>
-    <parameter key="database_host">127.0.0.1</parameter>
+    <parameter key="database_host">localhost</parameter>
     <parameter key="database_port">null</parameter>
     <parameter key="database_name">symfony</parameter>
     <parameter key="database_user">root</parameter>
-    <parameter key="database_password">null</parameter>
+    <parameter key="database_password">root</parameter>
     <parameter key="mailer_transport">smtp</parameter>
     <parameter key="mailer_host">127.0.0.1</parameter>
     <parameter key="mailer_user">null</parameter>
@@ -92,7 +92,7 @@
     <parameter key="debug.errors_logger_listener.class">Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener</parameter>
     <parameter key="debug.event_dispatcher.class">Symfony\Component\HttpKernel\Debug\TraceableEventDispatcher</parameter>
     <parameter key="debug.stopwatch.class">Symfony\Component\Stopwatch\Stopwatch</parameter>
-    <parameter key="debug.container.dump">C:/wamp/www/symfony/app/cache/dev/appDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/appDevDebugProjectContainer.xml</parameter>
     <parameter key="debug.controller_resolver.class">Symfony\Component\HttpKernel\Controller\TraceableControllerResolver</parameter>
     <parameter key="debug.debug_handlers_listener.class">Symfony\Component\HttpKernel\EventListener\DebugHandlersListener</parameter>
     <parameter key="kernel.secret">newsecret</parameter>
@@ -114,7 +114,7 @@
     <parameter key="session.storage.options" type="collection">
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">C:/wamp/www/symfony/app/cache/dev/sessions</parameter>
+    <parameter key="session.save_path">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="security.secure_random.class">Symfony\Component\Security\Core\Util\SecureRandom</parameter>
     <parameter key="form.resolved_type_factory.class">Symfony\Component\Form\ResolvedFormTypeFactory</parameter>
@@ -190,7 +190,7 @@
     <parameter key="data_collector.form.extractor.class">Symfony\Component\Form\Extension\DataCollector\FormDataExtractor</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:/wamp/www/symfony/app/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/profiler</parameter>
     <parameter key="profiler.storage.username"></parameter>
     <parameter key="profiler.storage.password"></parameter>
     <parameter key="profiler.storage.lifetime">86400</parameter>
@@ -214,7 +214,7 @@
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
-    <parameter key="router.resource">C:/wamp/www/symfony/app/cache/dev/assetic/routing.yml</parameter>
+    <parameter key="router.resource">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/assetic/routing.yml</parameter>
     <parameter key="router.cache_class_prefix">appDev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
@@ -299,9 +299,7 @@
         <parameter>ROLE_USER</parameter>
       </parameter>
       <parameter key="ROLE_SUPER_ADMIN" type="collection">
-        <parameter>ROLE_USER</parameter>
         <parameter>ROLE_ADMIN</parameter>
-        <parameter>ROLE_ALLOWED_TO_SWITCH</parameter>
       </parameter>
     </parameter>
     <parameter key="twig.class">Twig_Environment</parameter>
@@ -335,7 +333,7 @@
       <parameter key="exception_controller">twig.controller.exception:showAction</parameter>
       <parameter key="autoescape_service">null</parameter>
       <parameter key="autoescape_service_method">null</parameter>
-      <parameter key="cache">C:/wamp/www/symfony/app/cache/dev/twig</parameter>
+      <parameter key="cache">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/twig</parameter>
       <parameter key="charset">UTF-8</parameter>
       <parameter key="paths" type="collection"/>
     </parameter>
@@ -405,7 +403,7 @@
     <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
-    <parameter key="swiftmailer.spool.default.memory.path">C:/wamp/www/symfony/app/cache/dev/swiftmailer/spool/default</parameter>
+    <parameter key="swiftmailer.spool.default.memory.path">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
@@ -430,7 +428,7 @@
     <parameter key="assetic.worker.cache_busting.class">Assetic\Factory\Worker\CacheBustingWorker</parameter>
     <parameter key="assetic.value_supplier.class">Symfony\Bundle\AsseticBundle\DefaultValueSupplier</parameter>
     <parameter key="assetic.node.paths" type="collection"/>
-    <parameter key="assetic.cache_dir">C:/wamp/www/symfony/app/cache/dev/assetic</parameter>
+    <parameter key="assetic.cache_dir">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/assetic</parameter>
     <parameter key="assetic.bundles" type="collection">
       <parameter>BHMCoreBundle</parameter>
     </parameter>
@@ -442,10 +440,10 @@
     <parameter key="assetic.debug">true</parameter>
     <parameter key="assetic.use_controller">true</parameter>
     <parameter key="assetic.enable_profiler">false</parameter>
-    <parameter key="assetic.read_from">C:/wamp/www/symfony/app/../web</parameter>
-    <parameter key="assetic.write_to">C:/wamp/www/symfony/app/../web</parameter>
+    <parameter key="assetic.read_from">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/../web</parameter>
+    <parameter key="assetic.write_to">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
-    <parameter key="assetic.java.bin">C:\Windows\SYSTEM32\java.EXE</parameter>
+    <parameter key="assetic.java.bin">C:\windows\system32\java.EXE</parameter>
     <parameter key="assetic.node.bin">/usr/bin/node</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
@@ -552,7 +550,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:/wamp/www/symfony/app/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="sensio_framework_extra.view.guesser.class">Sensio\Bundle\FrameworkExtraBundle\Templating\TemplateGuesser</parameter>
     <parameter key="sensio_framework_extra.controller.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener</parameter>
@@ -704,7 +702,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>C:/wamp/www/symfony/app/Resources</argument>
+                <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/Resources</argument>
               </service>
             </argument>
             <argument type="service" id="templating.locator"/>
@@ -730,7 +728,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>C:/wamp/www/symfony/app/Resources</argument>
+                <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/Resources</argument>
               </service>
             </argument>
           </service>
@@ -752,7 +750,7 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator">
       <argument type="service" id="kernel"/>
-      <argument>C:/wamp/www/symfony/app/Resources</argument>
+      <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/Resources</argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
       <argument>newsecret</argument>
@@ -837,7 +835,7 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">C:/wamp/www/symfony/app/cache/dev/translations</argument>
+        <argument key="cache_dir">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/translations</argument>
         <argument key="debug">true</argument>
       </argument>
     </service>
@@ -1242,7 +1240,7 @@
     </service>
     <service id="security.secure_random" class="Symfony\Component\Security\Core\Util\SecureRandom">
       <tag name="monolog.logger" channel="security"/>
-      <argument>C:/wamp/www/symfony/app/cache/dev/secure_random.seed</argument>
+      <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/secure_random.seed</argument>
       <argument type="service" id="monolog.logger.security" on-invalid="ignore"/>
     </service>
     <service id="form.resolved_type_factory" class="Symfony\Component\Form\Extension\DataCollector\Proxy\ResolvedTypeFactoryDataCollectorProxy">
@@ -1461,7 +1459,7 @@
     <service id="templating.filename_parser" class="Symfony\Bundle\FrameworkBundle\Templating\TemplateFilenameParser"/>
     <service id="templating.locator" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator" public="false">
       <argument type="service" id="file_locator"/>
-      <argument>C:/wamp/www/symfony/app/cache/dev</argument>
+      <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev</argument>
     </service>
     <service id="templating.helper.slots" class="Symfony\Component\Templating\Helper\SlotsHelper">
       <tag name="templating.helper" alias="slots"/>
@@ -1499,7 +1497,7 @@
     <service id="templating.helper.code" class="Symfony\Bundle\FrameworkBundle\Templating\Helper\CodeHelper">
       <tag name="templating.helper" alias="code"/>
       <argument>null</argument>
-      <argument>C:/wamp/www/symfony/app</argument>
+      <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="templating.helper.translator" class="Symfony\Bundle\FrameworkBundle\Templating\Helper\TranslatorHelper">
@@ -1552,8 +1550,8 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/config/validation.xml</argument>
-          <argument>C:\wamp\www\symfony\vendor\friendsofsymfony\user-bundle\Resources\config\validation.xml</argument>
+          <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/config/validation.xml</argument>
+          <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\friendsofsymfony\user-bundle\Resources\config\validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1577,7 +1575,7 @@
         </argument>
       </call>
       <call method="addXmlMapping">
-        <argument>C:\wamp\www\symfony\vendor\friendsofsymfony\user-bundle\DependencyInjection\Compiler/../../Resources/config/validation/orm.xml</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\friendsofsymfony\user-bundle\DependencyInjection\Compiler/../../Resources/config/validation/orm.xml</argument>
       </call>
     </service>
     <service id="validator.expression" class="Symfony\Component\Validator\Constraints\ExpressionValidator">
@@ -1601,7 +1599,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service">
         <service class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-          <argument>file:C:/wamp/www/symfony/app/cache/dev/profiler</argument>
+          <argument>file:C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/profiler</argument>
           <argument></argument>
           <argument></argument>
           <argument>86400</argument>
@@ -1823,11 +1821,16 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider" public="false">
-            <argument type="service" id="security.user.provider.concrete.in_memory"/>
+            <argument type="service" id="fos_user.user_provider.username"/>
             <argument type="service" id="security.user_checker"/>
-            <argument>demo_secured_area</argument>
+            <argument>main</argument>
             <argument type="service" id="security.encoder_factory"/>
             <argument>true</argument>
+          </service>
+        </argument>
+        <argument type="service">
+          <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
+            <argument>54af85b881fe4</argument>
           </service>
         </argument>
       </argument>
@@ -1879,9 +1882,7 @@
           <argument>ROLE_USER</argument>
         </argument>
         <argument key="ROLE_SUPER_ADMIN" type="collection">
-          <argument>ROLE_USER</argument>
           <argument>ROLE_ADMIN</argument>
-          <argument>ROLE_ALLOWED_TO_SWITCH</argument>
         </argument>
       </argument>
     </service>
@@ -1891,19 +1892,9 @@
         <service class="Symfony\Bundle\SecurityBundle\Security\FirewallMap" public="false">
           <argument type="service" id="service_container"/>
           <argument type="collection">
-            <argument key="security.firewall.map.context.dev" type="service">
+            <argument key="security.firewall.map.context.main" type="service">
               <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                <argument>^/(_(profiler|wdt)|css|images|js)/</argument>
-              </service>
-            </argument>
-            <argument key="security.firewall.map.context.demo_login" type="service">
-              <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                <argument>^/demo/secured/login$</argument>
-              </service>
-            </argument>
-            <argument key="security.firewall.map.context.demo_secured_area" type="service">
-              <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-                <argument>^/demo/secured/</argument>
+                <argument>^/</argument>
               </service>
             </argument>
           </argument>
@@ -1924,8 +1915,8 @@
       <argument type="service" id="service_container"/>
       <argument type="service" id="router"/>
       <call method="registerListener">
-        <argument>demo_secured_area</argument>
-        <argument>_demo_logout</argument>
+        <argument>main</argument>
+        <argument>/logout</argument>
         <argument>logout</argument>
         <argument>_csrf_token</argument>
         <argument>null</argument>
@@ -1935,45 +1926,58 @@
       <tag name="templating.helper" alias="security"/>
       <argument type="service" id="security.context" on-invalid="ignore"/>
     </service>
-    <service id="security.user.provider.concrete.in_memory" class="Symfony\Component\Security\Core\User\InMemoryUserProvider" public="false">
-      <call method="createUser">
-        <argument type="service">
-          <service class="Symfony\Component\Security\Core\User\User" public="false">
-            <argument>user</argument>
-            <argument>userpass</argument>
-            <argument type="collection">
-              <argument>ROLE_USER</argument>
-            </argument>
-          </service>
-        </argument>
-      </call>
-      <call method="createUser">
-        <argument type="service">
-          <service class="Symfony\Component\Security\Core\User\User" public="false">
-            <argument>admin</argument>
-            <argument>adminpass</argument>
-            <argument type="collection">
-              <argument>ROLE_ADMIN</argument>
-            </argument>
-          </service>
-        </argument>
-      </call>
-    </service>
-    <service id="security.firewall.map.context.dev" class="Symfony\Bundle\SecurityBundle\Security\FirewallContext">
-      <argument type="collection"/>
-      <argument>null</argument>
-    </service>
-    <service id="security.firewall.map.context.demo_login" class="Symfony\Bundle\SecurityBundle\Security\FirewallContext">
-      <argument type="collection"/>
-      <argument>null</argument>
-    </service>
-    <service id="security.firewall.map.context.demo_secured_area" class="Symfony\Bundle\SecurityBundle\Security\FirewallContext">
+    <service id="security.firewall.map.context.main" class="Symfony\Bundle\SecurityBundle\Security\FirewallContext">
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\ChannelListener" public="false">
             <tag name="monolog.logger" channel="security"/>
             <argument type="service">
-              <service class="Symfony\Component\Security\Http\AccessMap" public="false"/>
+              <service class="Symfony\Component\Security\Http\AccessMap" public="false">
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/login$</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/register</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/resetting</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/admin/</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>ROLE_ADMIN</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+              </service>
             </argument>
             <argument type="service">
               <service class="Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint" public="false">
@@ -1988,9 +1992,9 @@
           <service class="Symfony\Component\Security\Http\Firewall\ContextListener" public="false">
             <argument type="service" id="security.context"/>
             <argument type="collection">
-              <argument type="service" id="security.user.provider.concrete.in_memory"/>
+              <argument type="service" id="fos_user.user_provider.username"/>
             </argument>
-            <argument>demo_secured_area</argument>
+            <argument>main</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="debug.event_dispatcher" on-invalid="null"/>
           </service>
@@ -2012,13 +2016,13 @@
                     <argument type="service" id="router" on-invalid="null"/>
                   </service>
                 </argument>
-                <argument>_demo</argument>
+                <argument>/</argument>
               </service>
             </argument>
             <argument type="collection">
               <argument key="csrf_parameter">_csrf_token</argument>
               <argument key="intention">logout</argument>
-              <argument key="logout_path">_demo_logout</argument>
+              <argument key="logout_path">/logout</argument>
             </argument>
             <call method="addHandler">
               <argument type="service">
@@ -2029,7 +2033,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener" public="false">
-            <tag name="security.remember_me_aware" id="demo_secured_area" provider="security.user.provider.concrete.in_memory"/>
+            <tag name="security.remember_me_aware" id="main" provider="security.user.provider.concrete.fos_userbundle"/>
             <argument type="service" id="security.context"/>
             <argument type="service" id="security.authentication.manager"/>
             <argument type="service" id="security.authentication.session_strategy"/>
@@ -2039,7 +2043,7 @@
                 <argument type="service" id="router" on-invalid="null"/>
               </service>
             </argument>
-            <argument>demo_secured_area</argument>
+            <argument>main</argument>
             <argument type="service">
               <service class="Symfony\Component\Security\Http\Authentication\DefaultAuthenticationSuccessHandler" public="false">
                 <argument type="service">
@@ -2049,14 +2053,14 @@
                   </service>
                 </argument>
                 <argument type="collection">
-                  <argument key="login_path">_demo_login</argument>
                   <argument key="always_use_default_target_path">false</argument>
                   <argument key="default_target_path">/</argument>
+                  <argument key="login_path">/login</argument>
                   <argument key="target_path_parameter">_target_path</argument>
                   <argument key="use_referer">false</argument>
                 </argument>
                 <call method="setProviderKey">
-                  <argument>demo_secured_area</argument>
+                  <argument>main</argument>
                 </call>
               </service>
             </argument>
@@ -2070,7 +2074,7 @@
                   </service>
                 </argument>
                 <argument type="collection">
-                  <argument key="login_path">_demo_login</argument>
+                  <argument key="login_path">/login</argument>
                   <argument key="failure_path">null</argument>
                   <argument key="failure_forward">false</argument>
                   <argument key="failure_path_parameter">_failure_path</argument>
@@ -2079,7 +2083,7 @@
               </service>
             </argument>
             <argument type="collection">
-              <argument key="check_path">_demo_security_check</argument>
+              <argument key="check_path">/login_check</argument>
               <argument key="use_forward">false</argument>
               <argument key="require_previous_session">true</argument>
               <argument key="username_parameter">_username</argument>
@@ -2090,7 +2094,14 @@
             </argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="debug.event_dispatcher" on-invalid="null"/>
-            <argument>null</argument>
+            <argument type="service" id="form.csrf_provider"/>
+          </service>
+        </argument>
+        <argument type="service">
+          <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
+            <argument type="service" id="security.context"/>
+            <argument>54af85b881fe4</argument>
+            <argument type="service" id="monolog.logger.security" on-invalid="null"/>
           </service>
         </argument>
         <argument type="service">
@@ -2099,7 +2110,52 @@
             <argument type="service" id="security.context"/>
             <argument type="service" id="security.access.decision_manager"/>
             <argument type="service">
-              <service class="Symfony\Component\Security\Http\AccessMap" public="false"/>
+              <service class="Symfony\Component\Security\Http\AccessMap" public="false">
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/login$</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/register</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/resetting</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+                <call method="add">
+                  <argument type="service">
+                    <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+                      <argument>^/admin/</argument>
+                    </service>
+                  </argument>
+                  <argument type="collection">
+                    <argument>ROLE_ADMIN</argument>
+                  </argument>
+                  <argument>null</argument>
+                </call>
+              </service>
             </argument>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2115,7 +2171,7 @@
               <argument type="service" id="router" on-invalid="null"/>
             </service>
           </argument>
-          <argument>demo_secured_area</argument>
+          <argument>main</argument>
           <argument type="service">
             <service class="Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint" public="false">
               <argument type="service" id="http_kernel"/>
@@ -2125,7 +2181,7 @@
                   <argument type="service" id="router" on-invalid="null"/>
                 </service>
               </argument>
-              <argument>_demo_login</argument>
+              <argument>/login</argument>
               <argument>false</argument>
             </service>
           </argument>
@@ -2143,7 +2199,7 @@
         <argument key="exception_controller">twig.controller.exception:showAction</argument>
         <argument key="autoescape_service">null</argument>
         <argument key="autoescape_service_method">null</argument>
-        <argument key="cache">C:/wamp/www/symfony/app/cache/dev/twig</argument>
+        <argument key="cache">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
       </argument>
@@ -2193,7 +2249,7 @@
           <service class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
             <tag name="twig.extension"/>
             <argument>null</argument>
-            <argument>C:/wamp/www/symfony/app</argument>
+            <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app</argument>
             <argument>UTF-8</argument>
           </service>
         </argument>
@@ -2319,7 +2375,7 @@
       <argument>true</argument>
     </service>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
-      <argument>C:/wamp/www/symfony/app/logs/dev.log</argument>
+      <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/logs/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
     </service>
@@ -2365,7 +2421,7 @@
             </argument>
             <argument type="service">
               <service class="Assetic\Cache\ConfigCache" public="false">
-                <argument>C:/wamp/www/symfony/app/cache/dev/assetic/config</argument>
+                <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/assetic/config</argument>
               </service>
             </argument>
             <argument>true</argument>
@@ -2382,7 +2438,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>BHMCoreBundle</argument>
-                  <argument>C:/wamp/www/symfony/app/Resources/BHMCoreBundle/views</argument>
+                  <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/Resources/BHMCoreBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2390,7 +2446,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>BHMCoreBundle</argument>
-                  <argument>C:\wamp\www\symfony\src\BHM\CoreBundle/Resources/views</argument>
+                  <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\src\BHM\CoreBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2406,7 +2462,7 @@
             <tag name="assetic.formula_resource" loader="twig"/>
             <argument type="service" id="templating.loader"/>
             <argument></argument>
-            <argument>C:/wamp/www/symfony/app/Resources/views</argument>
+            <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/Resources/views</argument>
             <argument>/\.[^.]+\.twig$/</argument>
           </service>
         </argument>
@@ -2419,7 +2475,7 @@
       <argument type="service">
         <service class="Symfony\Component\DependencyInjection\ParameterBag\ParameterBag" factory-method="getParameterBag" factory-service="service_container" public="false"/>
       </argument>
-      <argument>C:/wamp/www/symfony/app/../web</argument>
+      <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/../web</argument>
       <argument>true</argument>
       <call method="addWorker">
         <argument type="service">
@@ -2440,7 +2496,7 @@
       <argument type="service" id="profiler" on-invalid="null"/>
     </service>
     <service id="assetic.cache" class="Assetic\Cache\FilesystemCache" public="false">
-      <argument>C:/wamp/www/symfony/app/cache/dev/assetic/assets</argument>
+      <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/assetic/assets</argument>
     </service>
     <service id="assetic.request_listener" class="Symfony\Bundle\AsseticBundle\EventListener\RequestListener">
       <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest"/>
@@ -2463,11 +2519,11 @@
     <service id="doctrine.dbal.default_connection" class="Doctrine\DBAL\Connection" factory-method="createConnection" factory-service="doctrine.dbal.connection_factory">
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
-        <argument key="host">127.0.0.1</argument>
+        <argument key="host">localhost</argument>
         <argument key="port">null</argument>
         <argument key="dbname">symfony</argument>
         <argument key="user">root</argument>
-        <argument key="password">null</argument>
+        <argument key="password">root</argument>
         <argument key="charset">UTF8</argument>
         <argument key="driverOptions" type="collection"/>
       </argument>
@@ -2526,17 +2582,17 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_f1ff5d4fd37122bd168fa7dca50518d77fce356a96e181f0cf98d91ae1299e83</argument>
+        <argument>sf2orm_default_3d14b9d990c2ef61fc443aa90582b592c702fc3cd352bb4f597c2bc06a50799c</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_f1ff5d4fd37122bd168fa7dca50518d77fce356a96e181f0cf98d91ae1299e83</argument>
+        <argument>sf2orm_default_3d14b9d990c2ef61fc443aa90582b592c702fc3cd352bb4f597c2bc06a50799c</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_f1ff5d4fd37122bd168fa7dca50518d77fce356a96e181f0cf98d91ae1299e83</argument>
+        <argument>sf2orm_default_3d14b9d990c2ef61fc443aa90582b592c702fc3cd352bb4f597c2bc06a50799c</argument>
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\ORM\Mapping\DefaultEntityListenerResolver"/>
@@ -2570,7 +2626,7 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>C:\wamp\www\symfony\src\BHM\CoreBundle\Entity</argument>
+                        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\src\BHM\CoreBundle\Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -2582,7 +2638,7 @@
                       <argument type="service">
                         <service class="Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator">
                           <argument type="collection">
-                            <argument key="C:\wamp\www\symfony\vendor\friendsofsymfony\user-bundle\Resources\config\doctrine\model">FOS\UserBundle\Model</argument>
+                            <argument key="C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\friendsofsymfony\user-bundle\Resources\config\doctrine\model">FOS\UserBundle\Model</argument>
                           </argument>
                           <argument>.orm.xml</argument>
                         </service>
@@ -2595,7 +2651,7 @@
             </argument>
           </call>
           <call method="setProxyDir">
-            <argument>C:/wamp/www/symfony/app/cache/dev/doctrine/orm/Proxies</argument>
+            <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/doctrine/orm/Proxies</argument>
           </call>
           <call method="setProxyNamespace">
             <argument>Proxies</argument>
@@ -2677,6 +2733,9 @@
       <argument type="service" id="security.user_checker"/>
       <argument type="service" id="security.authentication.session_strategy"/>
       <argument type="service" id="service_container"/>
+    </service>
+    <service id="fos_user.user_provider.username" class="FOS\UserBundle\Security\UserProvider" public="false">
+      <argument type="service" id="fos_user.user_manager"/>
     </service>
     <service id="fos_user.util.user_manipulator" class="FOS\UserBundle\Util\UserManipulator">
       <argument type="service" id="fos_user.user_manager"/>
@@ -2843,7 +2902,7 @@
       <argument type="service" id="router" on-invalid="ignore"/>
     </service>
     <service id="sensio_distribution.webconfigurator" class="Sensio\Bundle\DistributionBundle\Configurator\Configurator">
-      <argument>C:/wamp/www/symfony/app</argument>
+      <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app</argument>
     </service>
     <service id="coresphere_console.toolbar" class="CoreSphere\ConsoleBundle\DataCollector\DataCollector">
       <tag name="data_collector" template="CoreSphereConsoleBundle:Toolbar:toolbar" id="coresphere_console"/>
@@ -2985,7 +3044,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.filesystem" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage">
-      <argument>C:/wamp/www/symfony/app/cache/dev/sessions</argument>
+      <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
@@ -3034,9 +3093,9 @@
     <service id="router" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <argument type="service" id="service_container"/>
-      <argument>C:/wamp/www/symfony/app/cache/dev/assetic/routing.yml</argument>
+      <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/assetic/routing.yml</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:/wamp/www/symfony/app/cache/dev</argument>
+        <argument key="cache_dir">C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -3056,15 +3115,17 @@
       <argument type="service">
         <service class="Doctrine\Common\Annotations\AnnotationReader" public="false"/>
       </argument>
-      <argument>C:/wamp/www/symfony/app/cache/dev/annotations</argument>
+      <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/cache/dev/annotations</argument>
       <argument>true</argument>
     </service>
     <service id="security.encoder_factory" class="Symfony\Component\Security\Core\Encoder\EncoderFactory">
       <argument type="collection">
-        <argument key="Symfony\Component\Security\Core\User\User" type="collection">
-          <argument key="class">%security.encoder.plain.class%</argument>
+        <argument key="FOS\UserBundle\Model\UserInterface" type="collection">
+          <argument key="class">%security.encoder.digest.class%</argument>
           <argument key="arguments" type="collection">
-            <argument>false</argument>
+            <argument>sha512</argument>
+            <argument>true</argument>
+            <argument>5000</argument>
           </argument>
         </argument>
       </argument>
@@ -3074,54 +3135,54 @@
       <argument type="service" id="templating.locator"/>
       <argument type="service" id="templating.name_parser"/>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/views</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/views</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\vendor\symfony\swiftmailer-bundle/Resources/views</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\symfony\swiftmailer-bundle/Resources/views</argument>
         <argument>Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\src\BHM\CoreBundle/Resources/views</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\src\BHM\CoreBundle/Resources/views</argument>
         <argument>BHMCore</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\vendor\friendsofsymfony\user-bundle/Resources/views</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\friendsofsymfony\user-bundle/Resources/views</argument>
         <argument>FOSUser</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\src\Acme\DemoBundle/Resources/views</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\src\Acme\DemoBundle/Resources/views</argument>
         <argument>AcmeDemo</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\vendor\sensio\distribution-bundle\Sensio\Bundle\DistributionBundle/Resources/views</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\sensio\distribution-bundle\Sensio\Bundle\DistributionBundle/Resources/views</argument>
         <argument>SensioDistribution</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\vendor\coresphere\console-bundle\CoreSphere\ConsoleBundle/Resources/views</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\coresphere\console-bundle\CoreSphere\ConsoleBundle/Resources/views</argument>
         <argument>CoreSphereConsole</argument>
       </call>
       <call method="addPath">
-        <argument>C:/wamp/www/symfony/app/Resources/views</argument>
+        <argument>C:/Web/EasyPHP-DevServer-14.1VC11/data/localweb/Blue-Hood-Manager/app/Resources/views</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bridge\Twig/Resources/views/Form</argument>
+        <argument>C:\Web\EasyPHP-DevServer-14.1VC11\data\localweb\Blue-Hood-Manager\vendor\symfony\symfony\src\Symfony\Bridge\Twig/Resources/views/Form</argument>
       </call>
     </service>
     <service id="logger" class="Symfony\Bridge\Monolog\Logger">
