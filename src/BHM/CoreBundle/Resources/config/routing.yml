@@ -2,11 +2,7 @@
 
 bhm_core_login:
     path:     /
-    defaults: { _controller: BHMCoreBundle:Default:login }
-
-bhm_core_signup:
-    path:     /signup
-    defaults: { _controller: BHMCoreBundle:Default:signup }
+    defaults: { _controller: BHMCoreBundle:Default:dashboard }
 
 bhm_core_dashboard:
     path:     /dashboard
