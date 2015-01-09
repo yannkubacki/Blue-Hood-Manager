@@ -27,10 +27,10 @@
 //** Background color for `<body>`.
 @body-bg:               @cloud;
 //** Global text color on `<body>`.
-@text-color:            @gray;
+@text-color:            @gray-dark;
 
 //** Global textual link color.
-@link-color:            #fff;
+@link-color:            @gray-light;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      #fff;
 
@@ -39,7 +39,7 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "PT Sans","Lato","Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -49,7 +49,7 @@
 @font-size-large:         ceil((@font-size-base * 1.125)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.875)); // ~14px
 
-@font-size-h1:            floor((@font-size-base * 1.75)); // ~28px
+@font-size-h1:            floor((@font-size-base * 1.15)); // ~28px
 @font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
 @font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
 @font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
@@ -335,7 +335,7 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    80px;
+@navbar-height:                    70px;
 @navbar-margin-bottom:             0px;
 @navbar-border-radius:             0px;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
@@ -343,7 +343,7 @@
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             #fff;
-@navbar-default-bg:                @blue-dark;
+@navbar-default-bg:                #fff;
 @navbar-default-border:            transparent;
 
 // Navbar links
@@ -398,17 +398,17 @@
 
 //=== Shared nav styles
 @nav-link-padding:                          25px 15px;
-@nav-link-hover-bg:                         @blue-dark;
+@nav-link-hover-bg:                         transparent;
 
-@nav-disabled-link-color:                   #fff;
+@nav-disabled-link-color:                   @gray;
 @nav-disabled-link-hover-color:             @gray-light;
 
 @nav-open-link-hover-color:                 #fff;
 
 //== Tabs
-@nav-tabs-border-color:                     @blue-dark;
+@nav-tabs-border-color:                     transparent;
 
-@nav-tabs-link-hover-border-color:          @blue-dark;
+@nav-tabs-link-hover-border-color:          transparent;
 
 @nav-tabs-active-link-hover-bg:             @body-bg;
 @nav-tabs-active-link-hover-color:          @gray;

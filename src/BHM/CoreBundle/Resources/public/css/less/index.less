@@ -1,23 +1,26 @@
 /*-----------------------------------------*\
+                    HELPERS
+\*-----------------------------------------*/
+.no-padding {padding: 0px!important;}
+
+/*-----------------------------------------*\
                      BASE
 \*-----------------------------------------*/
 
 	//Variables
-	@blue-dark: #2c3e50;
-	@blue: #34495e;
-	@cloud : #ecf0f1;
+	@black-dark: #404040;
+	@black : #272727;
+	@blue-dark: #0a4d6f;
+	@blue: #5f97fb;
+	@cloud : #f0f0f0;
 
 
 	
 /*-----------------------------------------*\
                     LAYOUT
 \*-----------------------------------------*/
-.l-mainRow {
-	padding: 0px;
-}
-
-.l-sidebar-container {
-	padding: 0px;
+.l-header {
+	background-color: @blue;
 }
 
 .l-sidebar {
@@ -25,7 +28,12 @@
 	height: 100vh;
 	width: 100%;
 	padding-top: -80px;
-	background-color: @blue;
+	background-color: @black;
+	
+	a {
+		color: #fff;
+	}
+
 }
 
 .l-container {
@@ -35,9 +43,86 @@
 /*-----------------------------------------*\
                     MODULES
 \*-----------------------------------------*/
+/*---------- HEADLINE ----------*/
+.headline{
+	height: 100%;
+	width: 100%;
+	background-color: @blue;
+}
 
+.headline--container {
+	background-color: @blue;
+}
+
+.headline--title {
+	margin: 0px;
+	font-size: 0.9em;
+	line-height: 70px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-weight: 300;
+	color: #fff;
+}
+
+/*---------- MAIN NAV ----------*/
+.navbar {
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+}
+
+
+/*---------- SIDE NAV ----------*/
+.nav-element {
+	border-bottom: 1px solid @black-dark;
+
+	> a {
+		padding-right: 5px;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+}
+
+.nav-element.is-active > a{
+	border-right: 5px solid @blue;
+}
+
+.nav-element.is-active > a:hover{
+	transform : translateX(0px);
+}
+
+.nav-element > a:hover {
+	transform : translateX(10px);
+}
+
+
+/*---------- PROJET ----------*/
 .project {
 	width: 100%;
-	padding: 10px;
+	padding: 15px;
 	background-color: #fff;
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+}
+
+.project--name {
+	margin: 0px 0px 15px 0px;
+}
+
+.project--thumbnail {
+	margin-bottom: 15px;
+}
+
+.project--infos {
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+}
+
+.project--number {
+	margin-right: 5px;
+	font-weight: 600;
+	color: @blue;
 }
