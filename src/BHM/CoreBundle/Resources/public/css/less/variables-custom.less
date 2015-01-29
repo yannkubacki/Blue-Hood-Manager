@@ -32,7 +32,7 @@
 //** Global textual link color.
 @link-color:            @gray-light;
 //** Link hover color set via `darken()` function.
-@link-hover-color:      #fff;
+@link-hover-color:      @gray-light;
 
 
 //== Typography
@@ -49,8 +49,8 @@
 @font-size-large:         ceil((@font-size-base * 1.125)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.875)); // ~14px
 
-@font-size-h1:            floor((@font-size-base * 1.15)); // ~28px
-@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h1:            floor((@font-size-base * 0.8)); // ~28px
+@font-size-h2:            floor((@font-size-base * 2)); // ~30px
 @font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
 @font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
 @font-size-h5:            @font-size-base;
@@ -73,7 +73,7 @@
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
 //** Load fonts from this directory.
-@icon-font-path:          "../fonts/";
+@icon-font-path:          "../../fonts/";
 //** File name for all font files.
 @icon-font-name:          "glyphicons-halflings-regular";
 //** Element ID within SVG icon file.

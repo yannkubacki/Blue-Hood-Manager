@@ -40,15 +40,44 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        if (0 === strpos($pathinfo, '/js/ec3b4c9')) {
-            // _assetic_ec3b4c9
-            if ($pathinfo === '/js/ec3b4c9.js') {
-                return array (  '_controller' => 'assetic.controller:render',  'name' => 'ec3b4c9',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_ec3b4c9',);
+        if (0 === strpos($pathinfo, '/js')) {
+            if (0 === strpos($pathinfo, '/js/cac6181')) {
+                // _assetic_cac6181
+                if ($pathinfo === '/js/cac6181.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'cac6181',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_cac6181',);
+                }
+
+                // _assetic_cac6181_0
+                if ($pathinfo === '/js/cac6181_jquery.min_1.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'cac6181',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_cac6181_0',);
+                }
+
             }
 
-            // _assetic_ec3b4c9_0
-            if ($pathinfo === '/js/ec3b4c9_script_1.js') {
-                return array (  '_controller' => 'assetic.controller:render',  'name' => 'ec3b4c9',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_ec3b4c9_0',);
+            if (0 === strpos($pathinfo, '/js/d139f89')) {
+                // _assetic_d139f89
+                if ($pathinfo === '/js/d139f89.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'd139f89',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_d139f89',);
+                }
+
+                // _assetic_d139f89_0
+                if ($pathinfo === '/js/d139f89_bootstrap.min_1.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'd139f89',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_d139f89_0',);
+                }
+
+            }
+
+            if (0 === strpos($pathinfo, '/js/ec3b4c9')) {
+                // _assetic_ec3b4c9
+                if ($pathinfo === '/js/ec3b4c9.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'ec3b4c9',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_ec3b4c9',);
+                }
+
+                // _assetic_ec3b4c9_0
+                if ($pathinfo === '/js/ec3b4c9_script_1.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'ec3b4c9',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_ec3b4c9_0',);
+                }
+
             }
 
         }
